@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN git clone /* oss git url */
 
-RUN go mod tidy 
+RUN cd ./[RepositoryName] && go mod tidy 
 
 CMD ["bash"]
